@@ -2,7 +2,7 @@
 
 Health Diagnostic System
 
-## Pré-requisitos
+## Pré-requisitos para ambiente de desenvolvimento
 
 * [.NET Core SDK](https://dotnet.microsoft.com/download)
 
