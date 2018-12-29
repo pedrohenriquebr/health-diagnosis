@@ -4,13 +4,16 @@ PROJECT_TITLE := DiagnosticoDeSaude
 
 
 # Directories vars
-RELEASE_DIR := Projeto/bin/Release/
-DEBUG_DIR := Projeto/bin/Debug/
+BIN_DIR := $(PROJECT_DIR)/bin/
+OBJ_DIR := $(PROJECT_DIR)/obj/
 
-RELEASES_DIR := releases/
+RELEASE_DIR := $(BIN_DIR)/Release/
+DEBUG_DIR := $(BIN_DIR)/Debug/
+
+RELEASES_DIR := $(PWD)/releases/
 
 # NuGet vars
-NUGET_PACKAGES_DIR := packages/
+NUGET_PACKAGES_DIR := $(PWD)/packages/
 
 # Tools vars
 MDTOOL := mdtool
@@ -22,14 +25,19 @@ CODENAME := baby
 
 
 # Compress vars
-TARGET_ZIP := $(PROJECT_TITLE)-$(VERSION)-$(CODENAME).zip
+TARGET_ZIP := $(PROJECT_TITLE)-$(VERSION).zip
 
-.PHONY : build-release build-debug zip-release
+BUILD_DIR := $(PWD)/build
 
-build-release: $(PROJECT_DIR)
+.PHONY : build-release build-debug zip-release clean
+
+restore-packages: DiagnosticoSaude.sln
+	nuget restore .
+
+build-release: $(PROJECT_DIR) restore-packages
 	$(MDTOOL) build -t:Build -c:Release
 
-build-debug: $(PROJECT_DIR)
+build-debug: $(PROJECT_DIR) restore-packages
 	$(MDTOOL) build -t:Build -c:Debug
 
 release: build-release
@@ -39,4 +47,15 @@ debug: build-debug
 	mono $(DEBUG_DIR)/$(BIN_NAME)
 
 zip-release: build-release
-	zip -r $(RELEASES_DIR)/$(TARGET_ZIP) $(RELEASE_DIR)
+	mkdir -p $(BUILD_DIR); \
+	mkdir -p $(RELEASES_DIR); \
+	cp $(RELEASE_DIR)/*.* $(BUILD_DIR) ; \
+	cd $(BUILD_DIR) ; \
+	zip  $(TARGET_ZIP) *.* ;\
+	mv $(TARGET_ZIP) $(RELEASES_DIR)
+
+clean:
+	rm -rf $(BUILD_DIR)
+	rm -rf $(BIN_DIR)
+	rm -rf $(OBJ_DIR)
+	rm -rf $(NUGET_PACKAGES_DIR)
