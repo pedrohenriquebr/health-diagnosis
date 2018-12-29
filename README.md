@@ -4,7 +4,7 @@ Health Diagnostic System
 
 ## Pré-requisitos
 
-* [Microsoft .Net SDK](https://dotnet.microsoft.com/download)
+* [.NET Core SDK](https://dotnet.microsoft.com/download)
 
 ## Amostra de imagens
 
