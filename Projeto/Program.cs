@@ -17,7 +17,7 @@ namespace Projeto
         [STAThread]
         static void Main()
         {
-            DotEnv.Config(throwOnError: false);
+            DotEnv.Config(throwOnError: false,filePath : ".config");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Projeto.View.Enfermeiro.LoginEnfermeiro());

@@ -443,42 +443,42 @@ create procedure solucao()
 begin
 	#IMC
 	#{
-		insert into Solucao values 
+		insert into solucao  values 
 		(
 			md5("Baixo Peso"),
 			"Recomendação - Baixo Peso",
 			"Indica-se a manutenção de consultas regulares com um nutricionista, para a determinação e o controle de uma dieta apropriada. O tabagismo é contraindicado."
 		);
 
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Peso Normal"),
 			"Recomendação - Peso Normal",
 			"Sua saúde parece apresentar boas condições quanto ao peso. Entretanto, somente consultas com nutricionistas podem garantir se a alimentação é ideal."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Sobrepeso"),
 			"Recomendação - Sobrepeso",
 			"Indicam-se consultas regulares com nutricionistas, para que seja aferida uma dieta com base nas especificações do paciente, aumento de atividades físicas e controle de stress."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Obesidade Grau I"),
 			"Recomendação - Obesidade Grau I",
 			"Recomendam-se consultas com clínico geral, endocrinologista e nutricionista para que sejam aferidos corretamente a dieta, os exercícios e os medicamentos a serem tomados."
 		);
 
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Obesidade Grau II"),
 			"Recomendação - Obesidade Grau II",
 			"Recomendam-se consultas com clínico geral, endocrinologista e nutricionista para que sejam aferidos corretamente a dieta, os exercícios e os medicamentos a serem tomados."
 		);
 
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Obesidade Grau III"),
 			"Recomendação - Obesidade Grau III",
@@ -488,56 +488,56 @@ begin
 
 	#Temperatura
 	#{
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipotermia Profunda"),
 			"Recomendação - Hipotermia Profunda",
 			"Indica-se a prática de exercícios para aumentar a circulação do sangue, buscar massagistas e angiologistas. Deve-se comer e beber regularmente e o álcool é contraindicado."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipotermia Grave"),
 			"Recomendação - Hipotermia Grave",
 			"Indica-se a prática de exercícios para aumentar a circulação do sangue, buscar massagistas e e angiologistas, deve comer e beber regularmente e o álcool é contraindicado."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipotermia Moderada"),
 			"Recomendação - Hipotermia Moderada",
 			"Indica-se a prática de exercícios para aumentar a circulação do sangue, buscar massagistas e angiologistas."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipotermia Leve"),
 			"Recomendação - Hipotermia Leve",
 			"Indica-se a prática de exercícios para aumentar a circulação do sangue, buscar massagistas e angiologistas."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Temperatura Normal"),
 			"Recomendação - Temperatura Normal",
 			"Sua saúde parece apresentar boas condições quanto à temperatura, mantenha com regularidade os check-ups."
 		);
 		
-		insert into Solucao values
+		insert into solucao values
 		(
 			md5("Febre"),
 			"Recomendação - Febre",
 			"Indica-se uma bateria de exames com um clínico geral para que ele afira qual a causa da febre e, portanto, possa prescrever o medicamente que melhor resolva o problema."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Pirexia"),
 			"Recomendação - Pirexia",
 			"Indica-se a ingestão correta das medicações antipiréticas prescritas por um clínico geral."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hiperpirexia"),
 			"Recomendação - Hiperpirexia",
@@ -547,21 +547,21 @@ begin
 
 	#Pulso
 	#{
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Bradisfigmia"),
 			"Recomendação - Bradisfigmia",
 			"Recomenda-se a busca por um profissional da área cardiológica e, se prescrito, o correto uso de medicamentos."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Normocardia"),
 			"Recomendação - Normocardia",
 			"Sua saúde apresenta boas condições quanto aos batimentos cardíacos, porém consultas regulares com cardiologistas são indicadas para a manutenção desse estado."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Taquisfigmia"),
 			"Recomendação - Taquisfigmia",
@@ -571,21 +571,21 @@ begin
 
 	#Respiração
 	#{
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Bradipneia"),
 			"Recomendação - Bradipneia",
 			"Indica-se a consulta com um otorrinolaringologista para definir a melhor forma de se garantir a oxigenação adequada dos pulmões e evitar a parada do funcionamento pulmonar."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Eupneia"),
 			"Recomendação - Eupneia",
 			"Recomenda-se seguir corretamente a medicação indicada por um otorrinolaringologista, que podem incluir remédios contra inflamação ou suplementação de oxigênio, além da prática de exercícios para aumento da capacidade pulmonar e aptidão física geral."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Taquipneia"),
 			"Recomendação - Taquipneia",
@@ -595,21 +595,21 @@ begin
 
 	#Circunferência Abdominal
 	#{
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Sem Risco de Complicações Metabólicas"),
 			"Recomendação - Sem Risco de Complicações Metabólicas",
 			"Sua saúde parece apresentar boas condições quanto ao metabolismo, porém consultas regulares a nutricionistas são indicadas para que esse quadro se mantenha."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Risco de Complicações Metabólicas Aumentado"),
 			"Recomendação - Risco de Complicações Metabólicas Aumentado",
 			"Indicam-se consultas com clínicos gerais ou endocrinologistas e seguir corretamente os medicamentos prescritos. Uma avaliação com um nutricionista também será necessária para a formulação de uma dieta adequada a seu caso."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Risco de Complicações Metabólicas Aumentado Substancialmente"),
 			"Recomendação - Risco de Complicações Metabólicas Aumentado Substancialmente",
@@ -619,28 +619,28 @@ begin
 	   
 	#Glicemia
 	#{
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipoglicemia"),
 			"Recomendação - Hipoglicemia",
 			"Indica-se a consulta com um nutricionista para a formulação de dietas balanceadas, com fracionamento das refeições, seguir as restrições médicas e evitar jejuns prolongados e alimentos açucarados."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Glicemia Normal"),
 			"Recomendação - Glicemia Normal",
 			"Sua saúde parece apresentar boas condições quanto a glicemia, porém consultas regulares a endocrinologistas são indicadas para que esse quadro se mantenha."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Pré-diabetes"),
 			"Recomendação - Pré-diabetes",
 			"Indica-se uma consulta com um nutricionista para a formulação de dietas adequadas e seguir corretamente os medicamentos indicados."
 		);
 
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Diabetes"),
 			"Recomendação - Diabetes",
@@ -650,49 +650,49 @@ begin
 	   
 	#Pressão Arterial
 	#{
-		insert into Solucao values
+		insert into solucao values
 		(
 			md5("Hipotensão"),
 			"Recomendação - Hipotensão",
 			"Indica-se a adição de sal à dieta, aumento na ingestão de água, uso de meias de compressão, realizar consultas regulares com o cardiologista e seguir as prescrições médicas corretamente."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Pressão Arterial Normal"),
 			"Recomendação - Pressão Arterial Normal",
 			"Sua saúde parece apresentar boas condições quanto à pressão arterial, mas mantenha a regularidade dos check-ups."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Pressão Arterial Normal Limítrofe"),
 			"Recomendação - Pressão Arterial Normal Limítrofe",
 			"Indica-se a manutenção do peso ideal, redução na ingestão de sódio, aumento na ingestão de potássio, redução ou abandono da ingestão de álcool, prática de exercícios físicos e suplementação de cálcio e magnésio. Contraindica-se o tabagismo. Deve-se entrar em contato com um profissional da saúde para se obter as especificações do tratamento."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipertensão Leve"),
 			"Recomendação - Hipertensão",
 			"Recomendam-se avaliações regulares com cardiologistas, aumento na ingestão de vitamina D, de amêndoas e de nozes, redução no consumo de sal e a prática de atividades físicas com moderação. Contraindica-se o tabagismo e o consumo de bebidas alcóolicas."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipertensão Moderada"),
 			"Recomendação - Hipertensão Moderada",
 			"Indicam-se consultas regulares com cardiologistas, para que o melhor tratamento seja aferido quanto às especificações do paciente."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipertensão Grave"),
 			"Recomendação - Hipertensão Grave",
 			"Indicam-se consultas regulares com cardiologistas, para que o melhor tratamento seja aferido quanto às especificações do paciente."
 		);
 		
-		insert into Solucao values 
+		insert into solucao values 
 		(
 			md5("Hipertensão Sistólica Isolada"),
 			"Recomendação - Hipertensão Sistólica Isolada",
