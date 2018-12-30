@@ -1,7 +1,7 @@
 # Project vars
 PROJECT_DIR := Projeto/
 PROJECT_TITLE := DiagnosticoDeSaude
-
+PROJECT_SOLUTION := DiagnosticoSaude.sln
 
 # Directories vars
 BIN_DIR := $(PROJECT_DIR)/bin/
@@ -16,7 +16,7 @@ RELEASES_DIR := $(PWD)/releases/
 NUGET_PACKAGES_DIR := $(PWD)/packages/
 
 # Tools vars
-MDTOOL := mdtool
+MSBUILD := msbuild
 
 # Version vars
 BIN_NAME := Projeto.exe
@@ -33,13 +33,13 @@ DOTENV := .env
 
 BUILD_DIR := $(PWD)/build
 
-.PHONY : build-release build-debug zip-release clean
+.PHONY : build-release build-debug zip-release clean debug rleease 
 
 restore-packages: DiagnosticoSaude.sln
 	nuget restore .
 
 define build
-	$(MDTOOL) build -t:Build -c:${1}
+	$(MSBUILD) $(PROJECT_SOLUTION) /t:Build /p:Configuration=${1}
 endef
 
 build-release: $(PROJECT_DIR) restore-packages
@@ -64,4 +64,4 @@ zip-release: build-release
 
 clean:
 	rm -rf $(BUILD_DIR)
-	$(MDTOOL) build -t:Clean
+	$(MSBUILD) /t:Clean
