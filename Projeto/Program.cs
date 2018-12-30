@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dotenv.net;
 
 namespace Projeto
 {
@@ -16,9 +17,10 @@ namespace Projeto
         [STAThread]
         static void Main()
         {
+            DotEnv.Config(throwOnError: false);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Projeto.View.Enfermeiro.LoginEnfermeiro()); 
+            Application.Run(new Projeto.View.Enfermeiro.LoginEnfermeiro());
         }
     }
 }
