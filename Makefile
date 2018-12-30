@@ -27,6 +27,10 @@ CODENAME := baby
 # Compress vars
 TARGET_ZIP := $(PROJECT_TITLE)-$(VERSION).zip
 
+
+# DotEnvironment vars
+DOTENV := .env
+
 BUILD_DIR := $(PWD)/build
 
 .PHONY : build-release build-debug zip-release clean
@@ -34,16 +38,20 @@ BUILD_DIR := $(PWD)/build
 restore-packages: DiagnosticoSaude.sln
 	nuget restore .
 
+define build
+	$(MDTOOL) build -t:Build -c:${1}
+endef
+
 build-release: $(PROJECT_DIR) restore-packages
-	$(MDTOOL) build -t:Build -c:Release
+	$(call build,Release)
 
 build-debug: $(PROJECT_DIR) restore-packages
-	$(MDTOOL) build -t:Build -c:Debug
+	$(call build,Debug)
 
-release: build-release
+release: $(RELEASE-DIR)
 	mono $(RELEASE_DIR)/$(BIN_NAME)
 
-debug: build-debug
+debug: $(DEBUG_DIR)
 	mono $(DEBUG_DIR)/$(BIN_NAME)
 
 zip-release: build-release
@@ -56,6 +64,4 @@ zip-release: build-release
 
 clean:
 	rm -rf $(BUILD_DIR)
-	rm -rf $(BIN_DIR)
-	rm -rf $(OBJ_DIR)
-	rm -rf $(NUGET_PACKAGES_DIR)
+	$(MDTOOL) build -t:Clean
