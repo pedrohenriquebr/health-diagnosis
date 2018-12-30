@@ -20,8 +20,8 @@ MDTOOL := mdtool
 
 # Version vars
 BIN_NAME := Projeto.exe
-VERSION  := 1.0.0
-CODENAME := baby
+VERSION  := 1.0.2
+CODENAME := child
 
 
 # Compress vars

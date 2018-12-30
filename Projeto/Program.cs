@@ -18,6 +18,7 @@ namespace Projeto
         static void Main()
         {
             DotEnv.Config(throwOnError: false,filePath : ".config");
+            System.Console.WriteLine(Environment.GetEnvironmentVariable("DB_HOST"));
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Projeto.View.Enfermeiro.LoginEnfermeiro());
