@@ -2,9 +2,59 @@
 
 Health Diagnostic System
 
-## Pré-requisitos para ambiente de desenvolvimento
+## Pré-requisitos
 
-* [.NET Core SDK](https://dotnet.microsoft.com/download)
+* [.NET Core SDK](https://dotnet.microsoft.com/download) (Windows)
+* [MonoDevelop](https://www.monodevelop.com/download/) (Linux)
+* Servidor MySQL/MariaDB
+
+> Até o presente momento, o ambiente de desenvolvimento só funciona em sistemas Linux
+
+## Guia de instalação
+
+Clone o projeto e entre no diretório:
+
+```bash
+git clone https://www.github.com/pedrohenriquebr/health-diagnosis.git
+cd health-diagnosis
+```
+
+Instale a base de dados SQL
+
+```bash
+./install_database.sh
+```
+
+> Certifique-se que seu servidor MySQL/MariaDB esteja ligado.
+
+### Construção do projeto
+
+Para release:
+
+```bash
+make build-release
+```
+
+Para depuração:
+
+```bash
+make build-debug
+```
+
+### Execução do projeto
+
+Para release:
+
+```bash
+make release
+```
+
+Para depuração:
+
+```bash
+make debug
+```
+
 
 ## Amostra de imagens
 
