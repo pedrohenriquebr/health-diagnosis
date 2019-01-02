@@ -1,3 +1,3 @@
 ## Health Diagnosis
 
-** Este aqui é um exemplo **
+**Este aqui é um exemplo**
