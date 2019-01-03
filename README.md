@@ -2,6 +2,9 @@
 
 Health Diagnostic System
 
+Este projeto tem como propósito atender enfermeiros que precisam de uma ferramenta visando automatizar a classficação
+de risco de pacientes, criação de histórico médico, cadastro de consultas e dentre outras tarefas.
+
 ## Pré-requisitos
 
 * [.NET Core SDK](https://dotnet.microsoft.com/download) (Windows)
