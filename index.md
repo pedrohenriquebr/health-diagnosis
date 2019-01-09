@@ -4,52 +4,9 @@ Este projeto é um sistema de diagnóstico médico, que tem como propósito aten
 para automatizar a classficação de risco de pacientes, criação de histórico médico, cadastro de consultas e
 dentre outras tarefas.
 
-> Até o presente momento, o ambiente de desenvolvimento só funciona em sistemas Linux
-
 ## Guia de instalação
 
-Clone o projeto e entre no diretório:
-
-```bash
-git clone https://www.github.com/pedrohenriquebr/health-diagnosis.git
-cd health-diagnosis
-```
-
-Instale a base de dados SQL
-
-```bash
-./install_database.sh
-```
-
-> Certifique-se que seu servidor MySQL/MariaDB esteja ligado.
-
-### Construção do projeto
-
-Para release:
-
-```bash
-make build-release
-```
-
-Para depuração:
-
-```bash
-make build-debug
-```
-
-### Execução do projeto
-
-Para release:
-
-```bash
-make release
-```
-
-Para depuração:
-
-```bash
-make debug
-```
+[Instalação](/installing.html)
 
 ## Amostra de imagens
 
