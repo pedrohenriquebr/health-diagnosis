@@ -21,13 +21,22 @@ git clone https://www.github.com/pedrohenriquebr/health-diagnosis.git
 cd health-diagnosis
 ```
 
-Instale a base de dados SQL
-
-```bash
-./install_database.sh
-```
+### Base de dados MySQL
 
 > Certifique-se que seu servidor MySQL/MariaDB esteja ligado.
+
+Faça a instalação das tabelas.
+
+```bash
+cd database
+make install
+```
+
+Instale amostras de consultas, pacientes e enfermeiros.
+
+```bash
+make install-samples
+```
 
 ### Construção do projeto
 
@@ -56,7 +65,6 @@ Para depuração:
 ```bash
 make debug
 ```
-
 
 ## Amostra de imagens
 
