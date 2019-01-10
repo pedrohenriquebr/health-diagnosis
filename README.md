@@ -92,4 +92,4 @@ Exibindo histórico médico
 
 ![Tentativa de exibiri histórico médico](images/tenta_historico_paciente.jpg)
 
-![Exibiindo histórico médico](images/exibe_historico.jpg)
+![Exibindo histórico médico](images/exibe_historico.jpg)
