@@ -19,7 +19,7 @@ NUGET_PACKAGES_DIR := $(PWD)/packages/
 MSBUILD := msbuild
 
 # Version vars
-BIN_NAME := Projeto.exe
+BIN_NAME := DiagnosticoDeSaude.exe
 BUILD_NUMBER_FILE := $(PWD)/build-number.txt
 VERSION  = 1.0.$$(cat $(BUILD_NUMBER_FILE))
 CODENAME := child
@@ -44,8 +44,9 @@ define build
 	$(MSBUILD) $(PROJECT_SOLUTION) /t:Build /p:Configuration=${1}
 endef
 
-build-release: $(BUILD_NUMBER_FILE) $(PROJECT_DIR) restore-packages
+build-release: $(PROJECT_DIR) restore-packages
 	$(call build,Release)
+	make $(BUILD_NUMBER_FILE)
 
 build-debug: $(PROJECT_DIR) restore-packages
 	$(call build,Debug)
@@ -65,5 +66,6 @@ zip-release: build-release
 	mv $(TARGET_ZIP) $(RELEASES_DIR)
 	echo $(VERSION)
 clean:
+	$(MSBUILD) /t:Clean /p:Configuration=Debug
+	$(MSBUILD) /t:Clean /p:Configuration=Release
 	rm -rf $(BUILD_DIR)
-	$(MSBUILD) /t:Clean
