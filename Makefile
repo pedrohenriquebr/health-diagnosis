@@ -20,8 +20,7 @@ MSBUILD := msbuild
 
 # Version vars
 BIN_NAME := DiagnosticoDeSaude.exe
-BUILD_NUMBER_FILE := $(PWD)/build-number.txt
-VERSION  = 1.0.$$(cat $(BUILD_NUMBER_FILE))
+VERSION  = 1.0.3
 CODENAME := child
 
 # Compress vars
@@ -33,9 +32,10 @@ DOTENV := .env
 
 BUILD_DIR := $(PWD)/build
 
-include buildnumber.mak
 
 .PHONY : build-release build-debug zip-release clean debug rleease 
+
+all: build-debug
 
 restore-packages: DiagnosticoSaude.sln
 	nuget restore .
@@ -46,7 +46,6 @@ endef
 
 build-release: $(PROJECT_DIR) restore-packages
 	$(call build,Release)
-	make $(BUILD_NUMBER_FILE)
 
 build-debug: $(PROJECT_DIR) restore-packages
 	$(call build,Debug)
