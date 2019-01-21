@@ -36,31 +36,24 @@ make install-samples
 
 ### Project building
 
-For release:
+Build the project:
 
 ```bash
-make build-release
+cd ..
+make
 ```
 
-For debugging:
+> The debug is default target
 
-```bash
-make build-debug
-```
 
 ### Project execution
-
-Fro release:
-
-```bash
-make release
-```
 
 For debugging:
 
 ```bash
 make debug
 ```
+
 
 ## Image samples
 
@@ -80,4 +73,3 @@ Displaying medic history
 Be my patron:
 
 [pedrobraga](https://www.patreon.com/pedrobraga)
-
