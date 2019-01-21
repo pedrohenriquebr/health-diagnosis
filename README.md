@@ -68,28 +68,16 @@ make debug
 
 ## Amostra de imagens
 
-Menu
-
-![Menu Principal](images/menu.jpg)
-
-Cadastro de um paciente
-
-![Cadastro de um paciente](images/cadastra_paciente.jpg)
-
-Criando uma consulta
-
-![Criando uma consulta](images/consulta.jpg)
-
-Exemplo de relatório gerado
-
-![Gerando relatório](images/relatorio_exemplo.jpg)
-
-Edição de relatório
-
-![Editando relatório](images/edita_relatorio.jpg)
 
 Exibindo histórico médico
 
 ![Tentativa de exibiri histórico médico](images/tenta_historico_paciente.jpg)
 
 ![Exibindo histórico médico](images/exibe_historico.jpg)
+
+# Me ajude
+
+Seja meu patrono:
+
+[pedrobraga](https://www.patreon.com/pedrobraga)
+
