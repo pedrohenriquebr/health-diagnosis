@@ -24,8 +24,6 @@ namespace Projeto.View.Enfermeiro
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            RelatorioDao dt = new RelatorioDao();
-            dt.a();
             Sair.sair(this);
         }
 

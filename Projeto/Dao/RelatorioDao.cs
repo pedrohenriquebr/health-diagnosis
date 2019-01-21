@@ -121,20 +121,5 @@ namespace Projeto.Dao
             }
             return relatorios;
         }
-
-        public void a()
-        {
-            Relatorio bb = new Relatorio("d0643a96715cb54727a2a3a8909e1c2a", "oi", Convert.ToDateTime(null), "785e9fdd98336da1eb4e60a914d5598f", "dc53fc4f621c80bdc2fa0329a6123708");
-            RelatorioDao r = new RelatorioDao();
-            if (r.update(bb))
-            {
-                MessageBox.Show("oi");
-            }
-            else
-            {
-                MessageBox.Show("ous");
-            }
-
-        }
     }
 }
