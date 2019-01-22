@@ -12,9 +12,9 @@ This project is a medical health diagnosis system made to serve nurses that need
 
 Clone the project and go to the directory 
 
-```bash
-git clone https://www.github.com/pedrohenriquebr/health-diagnosis.git
-cd health-diagnosis
+```console
+$ git clone https://www.github.com/pedrohenriquebr/health-diagnosis.git
+$ cd health-diagnosis
 ```
 
 ### MySQL Database
@@ -23,24 +23,24 @@ cd health-diagnosis
 
 Install the tables.
 
-```bash
-cd database
-make install
+```console
+$ cd database
+$ make install
 ```
 
 Install the appointments', patients' and nurses's samples.
 
-```bash
-make install-samples
+```console
+$ make install-samples
 ```
 
 ### Project building
 
 Build the project:
 
-```bash
-cd ..
-make
+```console
+$ cd ..
+$ make
 ```
 
 > The debug is default target
@@ -50,8 +50,8 @@ make
 
 For debugging:
 
-```bash
-make debug
+```console
+$ make debug
 ```
 
 
