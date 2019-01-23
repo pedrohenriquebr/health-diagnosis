@@ -2,7 +2,7 @@
 
 This project is a medical health diagnosis system made to serve nurses that need a tool to automate patient risk ratings, medic history creation, registration of medical appointments, among other things.
 
-## prerequisites
+## Prerequisites
 
 * [.NET Core SDK](https://dotnet.microsoft.com/download) (Windows)
 * [MonoDevelop](https://www.monodevelop.com/download/) (Linux)
