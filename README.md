@@ -6,7 +6,7 @@ This project is a medical health diagnosis system made to serve nurses that need
 
 * [.NET Core SDK](https://dotnet.microsoft.com/download) (Windows)
 * [MonoDevelop](https://www.monodevelop.com/download/) (Linux)
-* Servidor MySQL/MariaDB
+* MySQL server
 
 ## Installation guide
 
