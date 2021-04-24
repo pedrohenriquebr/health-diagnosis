@@ -67,9 +67,5 @@ Displaying medic history
 # Contributors
 
 * Thanks to Fabricio for helping translate `README.md` to English
-
-# Help me
-
-Be my patron:
-
-[pedrobraga](https://www.patreon.com/pedrobraga)
+* Victor Augusto
+* Lucas Vale
