@@ -6,7 +6,7 @@ dentre outras tarefas.
 
 ## Guia de instalação
 
-[Instalação](/installing.html)
+[Instalação](https://github.com/pedrohenriquebr/health-diagnosis#installation-guide)
 
 ## Amostra de imagens
 
