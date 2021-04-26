@@ -1,4 +1,4 @@
-# Health-Diagnosis
+# Diagnóstico de Saúde
 
 Este projeto é um sistema de diagnóstico médico, que tem como propósito atender enfermeiros que precisam de uma ferramenta
 para automatizar a classficação de risco de pacientes, criação de histórico médico, cadastro de consultas e
